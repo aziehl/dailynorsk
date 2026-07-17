@@ -183,16 +183,25 @@ final class SpeechRecognitionService: ObservableObject {
     private func stopCaptureAndDeactivateSession() {
         // Remove the tap first so no late empty buffers are forwarded while
         // the engine and audio route are shutting down.
+        let hadActiveCapture = isInputTapInstalled || audioEngine.isRunning
         removeInputTap()
         if audioEngine.isRunning {
             audioEngine.stop()
         }
+        if hadActiveCapture {
+            audioEngine.reset()
+        }
         guard isAudioSessionActive else { return }
-        try? AVAudioSession.sharedInstance().setActive(
-            false,
-            options: .notifyOthersOnDeactivation
-        )
-        isAudioSessionActive = false
+        do {
+            try AVAudioSession.sharedInstance().setActive(
+                false,
+                options: .notifyOthersOnDeactivation
+            )
+            isAudioSessionActive = false
+        } catch {
+            // Keep the flag set so a later reset retries deactivation instead
+            // of incorrectly treating a record-only session as released.
+        }
     }
 
     private func removeInputTap() {

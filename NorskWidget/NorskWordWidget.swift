@@ -97,10 +97,17 @@ struct NorskWordWidgetView: View {
                 .lineLimit(2)
 
             if family != .systemSmall, let usageExample {
-                Text(usageExample)
-                    .font(.footnote.weight(.medium))
-                    .foregroundStyle(.white)
-                    .lineLimit(family == .systemLarge ? 4 : 2)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(usageExample.norwegian)
+                        .font(.footnote.weight(.medium))
+                        .foregroundStyle(.white)
+                        .lineLimit(family == .systemLarge ? 3 : 2)
+
+                    Text(usageExample.english)
+                        .font(.caption2)
+                        .foregroundStyle(.white.opacity(0.78))
+                        .lineLimit(family == .systemLarge ? 3 : 2)
+                }
             }
 
             Spacer(minLength: 0)
@@ -131,10 +138,10 @@ struct NorskWordWidgetView: View {
         }
     }
 
-    /// Older widget overrides can outlive a content update. Do not render a
-    /// legacy definition-template example, and show source text only when it
-    /// is a complete sentence rather than a fragment.
-    private var usageExample: String? {
+    /// Older widget overrides can outlive a content update. Show only a
+    /// complete bilingual source pair and never render a legacy definition
+    /// template as a usage example.
+    private var usageExample: (norwegian: String, english: String)? {
         let norwegian = entry.item.exampleNorwegian.trimmingCharacters(in: .whitespacesAndNewlines)
         let english = entry.item.exampleEnglish.trimmingCharacters(in: .whitespacesAndNewlines)
         let combined = "\(norwegian) \(english)".lowercased()
@@ -148,11 +155,11 @@ struct NorskWordWidgetView: View {
         ]
 
         guard !norwegian.isEmpty,
-              norwegian.last.map({ ".!?".contains($0) }) == true,
+              !english.isEmpty,
               !templateFragments.contains(where: { combined.contains($0) }) else {
             return nil
         }
-        return norwegian
+        return (norwegian, english)
     }
 }
 

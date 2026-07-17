@@ -7,10 +7,14 @@ final class SpeechService: NSObject, ObservableObject, AVSpeechSynthesizerDelega
 
     private let synthesizer = AVSpeechSynthesizer()
     private var activeUtterance: AVSpeechUtterance?
-    private var isAudioSessionActive = false
 
     override init() {
         super.init()
+        // Recording is the only feature that needs the app's shared audio
+        // session. Let the system give synthesized speech its own managed
+        // session so a recently stopped microphone route cannot leave the
+        // synthesizer attached to the record-only session.
+        synthesizer.usesApplicationAudioSession = false
         synthesizer.delegate = self
     }
 
@@ -20,20 +24,6 @@ final class SpeechService: NSObject, ObservableObject, AVSpeechSynthesizerDelega
 
         guard let voice = AVSpeechSynthesisVoice(language: "nb-NO") else {
             errorMessage = "A Norwegian voice is not installed on this device."
-            return
-        }
-
-        let session = AVAudioSession.sharedInstance()
-        do {
-            // Recognition uses a record-only category. Explicitly restore a
-            // spoken-audio playback session before asking the synthesizer to
-            // render the next word or example.
-            try session.setCategory(.playback, mode: .spokenAudio, options: .duckOthers)
-            try session.setActive(true)
-            isAudioSessionActive = true
-        } catch {
-            errorMessage = "Norwegian audio could not be played. Please try again."
-            deactivateSession()
             return
         }
 
@@ -51,7 +41,6 @@ final class SpeechService: NSObject, ObservableObject, AVSpeechSynthesizerDelega
         if synthesizer.isSpeaking || synthesizer.isPaused {
             synthesizer.stopSpeaking(at: .immediate)
         }
-        deactivateSession()
     }
 
     func dismissError() {
@@ -79,15 +68,5 @@ final class SpeechService: NSObject, ObservableObject, AVSpeechSynthesizerDelega
     private func finish(_ utterance: AVSpeechUtterance) {
         guard activeUtterance === utterance else { return }
         activeUtterance = nil
-        deactivateSession()
-    }
-
-    private func deactivateSession() {
-        guard isAudioSessionActive else { return }
-        try? AVAudioSession.sharedInstance().setActive(
-            false,
-            options: .notifyOthersOnDeactivation
-        )
-        isAudioSessionActive = false
     }
 }
