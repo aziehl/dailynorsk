@@ -1,0 +1,6 @@
+[submodule "References/wordfreq"]
+	path = References/wordfreq
+	url = https://github.com/rspeer/wordfreq.git
+[submodule "References/ud-norwegian-bokmaal"]
+	path = References/ud-norwegian-bokmaal
+	url = https://github.com/UniversalDependencies/UD_Norwegian-Bokmaal.git

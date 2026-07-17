@@ -1,0 +1,871 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00100000000000000000001 /* NorskWordOfTheDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00100000000000000000001 /* NorskWordOfTheDayApp.swift */; };
+		A00300000000000000000003 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00300000000000000000003 /* SpeechService.swift */; };
+		A00400000000000000000004 /* WordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00400000000000000000004 /* WordEntry.swift */; };
+		A00500000000000000000005 /* WordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00500000000000000000005 /* WordRepository.swift */; };
+		A00600000000000000000006 /* SharedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00600000000000000000006 /* SharedDefaults.swift */; };
+		A00700000000000000000007 /* WordRotationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00700000000000000000007 /* WordRotationStore.swift */; };
+		A00800000000000000000008 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = B00800000000000000000008 /* words.json */; };
+		A00900000000000000000009 /* NorskWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00900000000000000000009 /* NorskWidgetBundle.swift */; };
+		A00A0000000000000000000A /* NorskWordWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00A0000000000000000000A /* NorskWordWidget.swift */; };
+		A00B0000000000000000000B /* NextWordIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00B0000000000000000000B /* NextWordIntent.swift */; };
+		A00C0000000000000000000C /* WordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00400000000000000000004 /* WordEntry.swift */; };
+		A00D0000000000000000000D /* WordRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00500000000000000000005 /* WordRepository.swift */; };
+		A00E0000000000000000000E /* SharedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00600000000000000000006 /* SharedDefaults.swift */; };
+		A00F0000000000000000000F /* WordRotationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00700000000000000000007 /* WordRotationStore.swift */; };
+		A01000000000000000000010 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = B00800000000000000000008 /* words.json */; };
+		A01100000000000000000011 /* NorskWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B01000000000000000000010 /* NorskWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A01200000000000000000012 /* PhraseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01200000000000000000012 /* PhraseEntry.swift */; };
+		A01300000000000000000013 /* LearningItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01300000000000000000013 /* LearningItem.swift */; };
+		A01400000000000000000014 /* ContentPackManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01400000000000000000014 /* ContentPackManifest.swift */; };
+		A01500000000000000000015 /* PhraseEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01200000000000000000012 /* PhraseEntry.swift */; };
+		A01600000000000000000016 /* LearningItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01300000000000000000013 /* LearningItem.swift */; };
+		A01700000000000000000017 /* ContentPackManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01400000000000000000014 /* ContentPackManifest.swift */; };
+		A01800000000000000000018 /* phrases.json in Resources */ = {isa = PBXBuildFile; fileRef = B01500000000000000000015 /* phrases.json */; };
+		A01900000000000000000019 /* content-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B01600000000000000000016 /* content-manifest.json */; };
+		A01A0000000000000000001A /* phrases.json in Resources */ = {isa = PBXBuildFile; fileRef = B01500000000000000000015 /* phrases.json */; };
+		A01B0000000000000000001B /* content-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B01600000000000000000016 /* content-manifest.json */; };
+		A01C0000000000000000001C /* ContentRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01700000000000000000017 /* ContentRepositoryTests.swift */; };
+		A01D0000000000000000001D /* LearningRotationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01900000000000000000019 /* LearningRotationStore.swift */; };
+		A01E0000000000000000001E /* LearningRotationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01900000000000000000019 /* LearningRotationStore.swift */; };
+		A01F0000000000000000001F /* LearningProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01A0000000000000000001A /* LearningProgress.swift */; };
+		A02000000000000000000020 /* DailyContentSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01B0000000000000000001B /* DailyContentSelector.swift */; };
+		A02100000000000000000021 /* DailyContentSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01B0000000000000000001B /* DailyContentSelector.swift */; };
+		A02200000000000000000022 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C0000000000000000001C /* SpeechRecognitionService.swift */; };
+		A02300000000000000000023 /* PronunciationPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01D0000000000000000001D /* PronunciationPracticeView.swift */; };
+		A02400000000000000000024 /* ContentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01E0000000000000000001E /* ContentSearch.swift */; };
+		A02500000000000000000025 /* RootContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F0000000000000000001F /* RootContentView.swift */; };
+		A02600000000000000000026 /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02000000000000000000020 /* LearningView.swift */; };
+		A02700000000000000000027 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02100000000000000000021 /* LibraryView.swift */; };
+		A02800000000000000000028 /* LearningItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02200000000000000000022 /* LearningItemDetailView.swift */; };
+		A02900000000000000000029 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02300000000000000000023 /* ReviewView.swift */; };
+		A02A0000000000000000002A /* ProgressDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02400000000000000000024 /* ProgressDashboardView.swift */; };
+		A02B0000000000000000002B /* NorskWordOfTheDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02900000000000000000029 /* NorskWordOfTheDayUITests.swift */; };
+		A02C0000000000000000002C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B02B0000000000000000002B /* Assets.xcassets */; };
+		A02D0000000000000000002D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = B02C0000000000000000002C /* PrivacyInfo.xcprivacy */; };
+		A02E0000000000000000002E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = B02C0000000000000000002C /* PrivacyInfo.xcprivacy */; };
+		A02F0000000000000000002F /* AboutAndPrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02D0000000000000000002D /* AboutAndPrivacyView.swift */; };
+		A03000000000000000000030 /* PhrasePracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02E0000000000000000002E /* PhrasePracticeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F00200000000000000000002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = P00100000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E00200000000000000000002;
+			remoteInfo = NorskWidgetExtension;
+		};
+		F00400000000000000000004 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = P00100000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E00100000000000000000001;
+			remoteInfo = "Norsk Word of the Day";
+		};
+		F00500000000000000000005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = P00100000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E00100000000000000000001;
+			remoteInfo = "Norsk Word of the Day";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D00700000000000000000007 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A01100000000000000000011 /* NorskWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B00100000000000000000001 /* NorskWordOfTheDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorskWordOfTheDayApp.swift; sourceTree = "<group>"; };
+		B00300000000000000000003 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		B00400000000000000000004 /* WordEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEntry.swift; sourceTree = "<group>"; };
+		B00500000000000000000005 /* WordRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordRepository.swift; sourceTree = "<group>"; };
+		B00600000000000000000006 /* SharedDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDefaults.swift; sourceTree = "<group>"; };
+		B00700000000000000000007 /* WordRotationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordRotationStore.swift; sourceTree = "<group>"; };
+		B00800000000000000000008 /* words.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		B00900000000000000000009 /* NorskWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorskWidgetBundle.swift; sourceTree = "<group>"; };
+		B00A0000000000000000000A /* NorskWordWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorskWordWidget.swift; sourceTree = "<group>"; };
+		B00B0000000000000000000B /* NextWordIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextWordIntent.swift; sourceTree = "<group>"; };
+		B01000000000000000000010 /* NorskWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NorskWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01100000000000000000011 /* Norsk Word of the Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Norsk Word of the Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01200000000000000000012 /* PhraseEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseEntry.swift; sourceTree = "<group>"; };
+		B01300000000000000000013 /* LearningItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningItem.swift; sourceTree = "<group>"; };
+		B01400000000000000000014 /* ContentPackManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPackManifest.swift; sourceTree = "<group>"; };
+		B01500000000000000000015 /* phrases.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = phrases.json; sourceTree = "<group>"; };
+		B01600000000000000000016 /* content-manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "content-manifest.json"; sourceTree = "<group>"; };
+		B01700000000000000000017 /* ContentRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepositoryTests.swift; sourceTree = "<group>"; };
+		B01800000000000000000018 /* NorskWordOfTheDayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorskWordOfTheDayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01900000000000000000019 /* LearningRotationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningRotationStore.swift; sourceTree = "<group>"; };
+		B01A0000000000000000001A /* LearningProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningProgress.swift; sourceTree = "<group>"; };
+		B01B0000000000000000001B /* DailyContentSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyContentSelector.swift; sourceTree = "<group>"; };
+		B01C0000000000000000001C /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		B01D0000000000000000001D /* PronunciationPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronunciationPracticeView.swift; sourceTree = "<group>"; };
+		B01E0000000000000000001E /* ContentSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSearch.swift; sourceTree = "<group>"; };
+		B01F0000000000000000001F /* RootContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContentView.swift; sourceTree = "<group>"; };
+		B02000000000000000000020 /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
+		B02100000000000000000021 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		B02200000000000000000022 /* LearningItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningItemDetailView.swift; sourceTree = "<group>"; };
+		B02300000000000000000023 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		B02400000000000000000024 /* ProgressDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressDashboardView.swift; sourceTree = "<group>"; };
+		B02500000000000000000025 /* AppInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppInfo.plist; sourceTree = "<group>"; };
+		B02600000000000000000026 /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		B02700000000000000000027 /* WidgetInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WidgetInfo.plist; sourceTree = "<group>"; };
+		B02800000000000000000028 /* Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widget.entitlements; sourceTree = "<group>"; };
+		B02900000000000000000029 /* NorskWordOfTheDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NorskWordOfTheDayUITests.swift; sourceTree = "<group>"; };
+		B02A0000000000000000002A /* NorskWordOfTheDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NorskWordOfTheDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B02B0000000000000000002B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B02C0000000000000000002C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		B02D0000000000000000002D /* AboutAndPrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAndPrivacyView.swift; sourceTree = "<group>"; };
+		B02E0000000000000000002E /* PhrasePracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasePracticeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D00500000000000000000005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00600000000000000000006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00900000000000000000009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00B0000000000000000000B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C00000000000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				C00100000000000000000001 /* NorskWordOfTheDay */,
+				C00600000000000000000006 /* NorskWidget */,
+				C00900000000000000000009 /* NorskWordOfTheDayTests */,
+				C00A0000000000000000000A /* NorskWordOfTheDayUITests */,
+				C00800000000000000000008 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C00100000000000000000001 /* NorskWordOfTheDay */ = {
+			isa = PBXGroup;
+			children = (
+				C00200000000000000000002 /* App */,
+				C00300000000000000000003 /* Shared */,
+				C00400000000000000000004 /* Resources */,
+				C00500000000000000000005 /* SupportingFiles */,
+			);
+			path = NorskWordOfTheDay;
+			sourceTree = "<group>";
+		};
+		C00200000000000000000002 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B00100000000000000000001 /* NorskWordOfTheDayApp.swift */,
+				B00300000000000000000003 /* SpeechService.swift */,
+				B01A0000000000000000001A /* LearningProgress.swift */,
+				B01C0000000000000000001C /* SpeechRecognitionService.swift */,
+				B01D0000000000000000001D /* PronunciationPracticeView.swift */,
+				B01E0000000000000000001E /* ContentSearch.swift */,
+				B01F0000000000000000001F /* RootContentView.swift */,
+				B02000000000000000000020 /* LearningView.swift */,
+				B02100000000000000000021 /* LibraryView.swift */,
+				B02200000000000000000022 /* LearningItemDetailView.swift */,
+				B02300000000000000000023 /* ReviewView.swift */,
+				B02400000000000000000024 /* ProgressDashboardView.swift */,
+				B02D0000000000000000002D /* AboutAndPrivacyView.swift */,
+				B02E0000000000000000002E /* PhrasePracticeView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C00300000000000000000003 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B00400000000000000000004 /* WordEntry.swift */,
+				B00500000000000000000005 /* WordRepository.swift */,
+				B00600000000000000000006 /* SharedDefaults.swift */,
+				B00700000000000000000007 /* WordRotationStore.swift */,
+				B01200000000000000000012 /* PhraseEntry.swift */,
+				B01300000000000000000013 /* LearningItem.swift */,
+				B01400000000000000000014 /* ContentPackManifest.swift */,
+				B01900000000000000000019 /* LearningRotationStore.swift */,
+				B01B0000000000000000001B /* DailyContentSelector.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C00400000000000000000004 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B00800000000000000000008 /* words.json */,
+				B01500000000000000000015 /* phrases.json */,
+				B01600000000000000000016 /* content-manifest.json */,
+				B02B0000000000000000002B /* Assets.xcassets */,
+				B02C0000000000000000002C /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C00500000000000000000005 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B02500000000000000000025 /* AppInfo.plist */,
+				B02600000000000000000026 /* App.entitlements */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C00600000000000000000006 /* NorskWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B00900000000000000000009 /* NorskWidgetBundle.swift */,
+				B00A0000000000000000000A /* NorskWordWidget.swift */,
+				B00B0000000000000000000B /* NextWordIntent.swift */,
+				C00700000000000000000007 /* SupportingFiles */,
+			);
+			path = NorskWidget;
+			sourceTree = "<group>";
+		};
+		C00700000000000000000007 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B02700000000000000000027 /* WidgetInfo.plist */,
+				B02800000000000000000028 /* Widget.entitlements */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C00800000000000000000008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B01100000000000000000011 /* Norsk Word of the Day.app */,
+				B01000000000000000000010 /* NorskWidgetExtension.appex */,
+				B01800000000000000000018 /* NorskWordOfTheDayTests.xctest */,
+				B02A0000000000000000002A /* NorskWordOfTheDayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C00900000000000000000009 /* NorskWordOfTheDayTests */ = {
+			isa = PBXGroup;
+			children = (
+				B01700000000000000000017 /* ContentRepositoryTests.swift */,
+			);
+			path = NorskWordOfTheDayTests;
+			sourceTree = "<group>";
+		};
+		C00A0000000000000000000A /* NorskWordOfTheDayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B02900000000000000000029 /* NorskWordOfTheDayUITests.swift */,
+			);
+			path = NorskWordOfTheDayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E00100000000000000000001 /* Norsk Word of the Day */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = H00200000000000000000002 /* Build configuration list for PBXNativeTarget "Norsk Word of the Day" */;
+			buildPhases = (
+				D00100000000000000000001 /* Sources */,
+				D00500000000000000000005 /* Frameworks */,
+				D00300000000000000000003 /* Resources */,
+				D00700000000000000000007 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F00100000000000000000001 /* PBXTargetDependency */,
+			);
+			name = "Norsk Word of the Day";
+			productName = "Norsk Word of the Day";
+			productReference = B01100000000000000000011 /* Norsk Word of the Day.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E00200000000000000000002 /* NorskWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = H00300000000000000000003 /* Build configuration list for PBXNativeTarget "NorskWidgetExtension" */;
+			buildPhases = (
+				D00200000000000000000002 /* Sources */,
+				D00600000000000000000006 /* Frameworks */,
+				D00400000000000000000004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NorskWidgetExtension;
+			productName = NorskWidgetExtension;
+			productReference = B01000000000000000000010 /* NorskWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E00300000000000000000003 /* NorskWordOfTheDayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = H00400000000000000000004 /* Build configuration list for PBXNativeTarget "NorskWordOfTheDayTests" */;
+			buildPhases = (
+				D00800000000000000000008 /* Sources */,
+				D00900000000000000000009 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F00300000000000000000003 /* PBXTargetDependency */,
+			);
+			name = NorskWordOfTheDayTests;
+			productName = NorskWordOfTheDayTests;
+			productReference = B01800000000000000000018 /* NorskWordOfTheDayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E00400000000000000000004 /* NorskWordOfTheDayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = H00500000000000000000005 /* Build configuration list for PBXNativeTarget "NorskWordOfTheDayUITests" */;
+			buildPhases = (
+				D00A0000000000000000000A /* Sources */,
+				D00B0000000000000000000B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F00600000000000000000006 /* PBXTargetDependency */,
+			);
+			name = NorskWordOfTheDayUITests;
+			productName = NorskWordOfTheDayUITests;
+			productReference = B02A0000000000000000002A /* NorskWordOfTheDayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		P00100000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					E00100000000000000000001 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					E00200000000000000000002 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					E00300000000000000000003 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = E00100000000000000000001;
+					};
+					E00400000000000000000004 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = E00100000000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = H00100000000000000000001 /* Build configuration list for PBXProject "NorskWordOfTheDay" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C00000000000000000000000;
+			productRefGroup = C00800000000000000000008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E00100000000000000000001 /* Norsk Word of the Day */,
+				E00200000000000000000002 /* NorskWidgetExtension */,
+				E00300000000000000000003 /* NorskWordOfTheDayTests */,
+				E00400000000000000000004 /* NorskWordOfTheDayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D00300000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00800000000000000000008 /* words.json in Resources */,
+				A01800000000000000000018 /* phrases.json in Resources */,
+				A01900000000000000000019 /* content-manifest.json in Resources */,
+				A02C0000000000000000002C /* Assets.xcassets in Resources */,
+				A02D0000000000000000002D /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00400000000000000000004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01000000000000000000010 /* words.json in Resources */,
+				A01A0000000000000000001A /* phrases.json in Resources */,
+				A01B0000000000000000001B /* content-manifest.json in Resources */,
+				A02E0000000000000000002E /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D00100000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00100000000000000000001 /* NorskWordOfTheDayApp.swift in Sources */,
+				A00300000000000000000003 /* SpeechService.swift in Sources */,
+				A01F0000000000000000001F /* LearningProgress.swift in Sources */,
+				A02200000000000000000022 /* SpeechRecognitionService.swift in Sources */,
+				A02300000000000000000023 /* PronunciationPracticeView.swift in Sources */,
+				A02400000000000000000024 /* ContentSearch.swift in Sources */,
+				A02500000000000000000025 /* RootContentView.swift in Sources */,
+				A02600000000000000000026 /* LearningView.swift in Sources */,
+				A02700000000000000000027 /* LibraryView.swift in Sources */,
+				A02800000000000000000028 /* LearningItemDetailView.swift in Sources */,
+				A02900000000000000000029 /* ReviewView.swift in Sources */,
+				A02A0000000000000000002A /* ProgressDashboardView.swift in Sources */,
+				A02F0000000000000000002F /* AboutAndPrivacyView.swift in Sources */,
+				A03000000000000000000030 /* PhrasePracticeView.swift in Sources */,
+				A00400000000000000000004 /* WordEntry.swift in Sources */,
+				A00500000000000000000005 /* WordRepository.swift in Sources */,
+				A00600000000000000000006 /* SharedDefaults.swift in Sources */,
+				A00700000000000000000007 /* WordRotationStore.swift in Sources */,
+				A01200000000000000000012 /* PhraseEntry.swift in Sources */,
+				A01300000000000000000013 /* LearningItem.swift in Sources */,
+				A01400000000000000000014 /* ContentPackManifest.swift in Sources */,
+				A01D0000000000000000001D /* LearningRotationStore.swift in Sources */,
+				A02000000000000000000020 /* DailyContentSelector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00200000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00900000000000000000009 /* NorskWidgetBundle.swift in Sources */,
+				A00A0000000000000000000A /* NorskWordWidget.swift in Sources */,
+				A00B0000000000000000000B /* NextWordIntent.swift in Sources */,
+				A00C0000000000000000000C /* WordEntry.swift in Sources */,
+				A00D0000000000000000000D /* WordRepository.swift in Sources */,
+				A00E0000000000000000000E /* SharedDefaults.swift in Sources */,
+				A00F0000000000000000000F /* WordRotationStore.swift in Sources */,
+				A01500000000000000000015 /* PhraseEntry.swift in Sources */,
+				A01600000000000000000016 /* LearningItem.swift in Sources */,
+				A01700000000000000000017 /* ContentPackManifest.swift in Sources */,
+				A01E0000000000000000001E /* LearningRotationStore.swift in Sources */,
+				A02100000000000000000021 /* DailyContentSelector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00800000000000000000008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01C0000000000000000001C /* ContentRepositoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D00A0000000000000000000A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A02B0000000000000000002B /* NorskWordOfTheDayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F00100000000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E00200000000000000000002 /* NorskWidgetExtension */;
+			targetProxy = F00200000000000000000002 /* PBXContainerItemProxy */;
+		};
+		F00300000000000000000003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E00100000000000000000001 /* Norsk Word of the Day */;
+			targetProxy = F00400000000000000000004 /* PBXContainerItemProxy */;
+		};
+		F00600000000000000000006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E00100000000000000000001 /* Norsk Word of the Day */;
+			targetProxy = F00500000000000000000005 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		G00100000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		G00200000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		G00300000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NorskWordOfTheDay/SupportingFiles/App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 5D95M38LTW;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NorskWordOfTheDay/SupportingFiles/AppInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NorskWordOfTheDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		G00400000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NorskWordOfTheDay/SupportingFiles/App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 5D95M38LTW;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NorskWordOfTheDay/SupportingFiles/AppInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NorskWordOfTheDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		G00500000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = NorskWidget/SupportingFiles/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5D95M38LTW;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NorskWidget/SupportingFiles/WidgetInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NorskWordOfTheDay.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		G00600000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = NorskWidget/SupportingFiles/Widget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5D95M38LTW;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NorskWidget/SupportingFiles/WidgetInfo.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NorskWordOfTheDay.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		G00700000000000000000007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NorskWordOfTheDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Norsk Word of the Day.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Norsk Word of the Day";
+			};
+			name = Debug;
+		};
+		G00800000000000000000008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NorskWordOfTheDayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Norsk Word of the Day.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Norsk Word of the Day";
+			};
+			name = Release;
+		};
+		G00900000000000000000009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NorskWordOfTheDayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Norsk Word of the Day";
+			};
+			name = Debug;
+		};
+		G00A0000000000000000000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.NorskWordOfTheDayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Norsk Word of the Day";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		H00100000000000000000001 /* Build configuration list for PBXProject "NorskWordOfTheDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				G00100000000000000000001 /* Debug */,
+				G00200000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		H00200000000000000000002 /* Build configuration list for PBXNativeTarget "Norsk Word of the Day" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				G00300000000000000000003 /* Debug */,
+				G00400000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		H00300000000000000000003 /* Build configuration list for PBXNativeTarget "NorskWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				G00500000000000000000005 /* Debug */,
+				G00600000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		H00400000000000000000004 /* Build configuration list for PBXNativeTarget "NorskWordOfTheDayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				G00700000000000000000007 /* Debug */,
+				G00800000000000000000008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		H00500000000000000000005 /* Build configuration list for PBXNativeTarget "NorskWordOfTheDayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				G00900000000000000000009 /* Debug */,
+				G00A0000000000000000000A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = P00100000000000000000001 /* Project object */;
+}

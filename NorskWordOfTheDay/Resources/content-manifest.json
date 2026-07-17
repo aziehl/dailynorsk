@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.07.5-dictionary-examples",
+  "language": "nb-NO",
+  "packs": [
+    {
+      "id": "daily-norsk-words-1500",
+      "kind": "word",
+      "version": 5,
+      "resource": "words.json",
+      "itemCount": 1500,
+      "minimumFrequencyRank": 1,
+      "maximumFrequencyRank": 1500
+    },
+    {
+      "id": "core-demo-phrases",
+      "kind": "phrase",
+      "version": 3,
+      "resource": "phrases.json",
+      "itemCount": 42,
+      "minimumFrequencyRank": null,
+      "maximumFrequencyRank": null
+    }
+  ]
+}

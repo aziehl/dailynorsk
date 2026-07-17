@@ -1,0 +1,28 @@
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+
+# Build output
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
+
+# Python tooling
+__pycache__/
+*.pyc
+
+# Reproducible content-pipeline output (regenerate locally)
+ContentPipeline/Generated/*
+!ContentPipeline/Generated/.gitkeep
+ContentPipeline/Sources/*
+!ContentPipeline/Sources/.gitkeep
+.content-pipeline-venv/

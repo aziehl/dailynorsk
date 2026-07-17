@@ -1,0 +1,24 @@
+{
+  "name": "Tatoeba Norwegian Bokmål–English sentence pairs",
+  "exportDate": "2026-07-11",
+  "landingPage": "https://tatoeba.org/en/downloads",
+  "license": "Creative Commons Attribution 2.0 France",
+  "licenseURL": "https://creativecommons.org/licenses/by/2.0/fr/",
+  "files": [
+    {
+      "name": "tatoeba-nob-sentences-detailed.tsv.bz2",
+      "downloadURL": "https://downloads.tatoeba.org/exports/per_language/nob/nob_sentences_detailed.tsv.bz2",
+      "sha256": "a8b511a555055423e1ac36a5d5867f2dd921fc11c679a3df428b682115a06c1e"
+    },
+    {
+      "name": "tatoeba-eng-sentences-detailed.tsv.bz2",
+      "downloadURL": "https://downloads.tatoeba.org/exports/per_language/eng/eng_sentences_detailed.tsv.bz2",
+      "sha256": "86dfa17528230f4bacd5d51108d0126548ad56f984dab4ad11262d8327ba7e6f"
+    },
+    {
+      "name": "tatoeba-eng-nob-links.tsv.bz2",
+      "downloadURL": "https://downloads.tatoeba.org/exports/per_language/eng/eng-nob_links.tsv.bz2",
+      "sha256": "b90493c605377dc0a1d4a6dae14e82a87ba050f2bf6feda881fd95c52637b786"
+    }
+  ]
+}

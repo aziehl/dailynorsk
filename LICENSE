@@ -1,0 +1,19 @@
+Daily Norsk proprietary project
+
+Copyright © 2026. All rights reserved.
+
+No permission is granted to copy, modify, distribute, sublicense, or sell this
+project's source code, original lesson content, artwork, or other project-authored
+materials without prior written permission from the copyright holder.
+
+This notice does not change the licenses of third-party materials. Third-party
+repositories under References/ remain governed by their own license and notice
+files. See THIRD_PARTY_NOTICES.md and CONTENT_SOURCES.md.
+
+The generated entries tagged `auto-generated` in
+NorskWordOfTheDay/Resources/words.json include licensed adaptations and
+Tatoeba example pairs. Wiktionary-derived lexical material is distributed
+under Creative Commons Attribution-ShareAlike 4.0 International; Tatoeba
+example text is distributed under Creative Commons Attribution 2.0 France.
+See THIRD_PARTY_NOTICES.md. This proprietary notice does not apply to those
+third-party licensed materials.

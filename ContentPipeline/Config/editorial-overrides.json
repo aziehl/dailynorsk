@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "excludedTokens": {
+    "http": "web artifact",
+    "https": "web artifact",
+    "www": "web artifact"
+  },
+  "lemmaOverrides": {},
+  "forcedPartOfSpeech": {},
+  "regionalVariants": {
+    "hva": [
+      {"form": "ka", "region": "Bergen", "note": "Common spoken question form."},
+      {"form": "kva", "region": "Vestland, many dialects", "note": "Also standard Nynorsk."}
+    ],
+    "hvorfor": [
+      {"form": "koffer", "region": "Bergen", "note": "Preferred learner-facing spelling for this project."},
+      {"form": "koffor", "region": "Bergen and Vestland", "note": "Common alternative dialect spelling."},
+      {"form": "koffår", "region": "Traditional Bergen transcription", "note": "Spelling emphasizes local pronunciation."}
+    ],
+    "hvor": [
+      {"form": "kor", "region": "Bergen and Vestland", "note": "Common spoken question form."}
+    ],
+    "hvordan": [
+      {"form": "kordan", "region": "Bergen", "note": "Common spoken question form."},
+      {"form": "kossen", "region": "Bergen and nearby speech", "note": "Common alternative."}
+    ],
+    "jeg": [
+      {"form": "eg", "region": "Vestland and Bergen", "note": "Common first-person pronoun."}
+    ],
+    "ikke": [
+      {"form": "ikkje", "region": "Many Vestland dialects", "note": "Also standard Nynorsk."},
+      {"form": "isje", "region": "Bergen, colloquial pronunciation", "note": "Informal representation of speech; usage varies."}
+    ]
+  },
+  "essentialFunctionWords": [
+    "å",
+    "og",
+    "i",
+    "på",
+    "til",
+    "av",
+    "for",
+    "med",
+    "ikke",
+    "som",
+    "det",
+    "den",
+    "en",
+    "et"
+  ],
+  "notes": "Every override must be justified in review; regional variants require a local fluent-speaker check and must not be presented as standardized dialect spelling."
+}
